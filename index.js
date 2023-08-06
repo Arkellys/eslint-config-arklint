@@ -1,3 +1,4 @@
+require("@rushstack/eslint-patch/modern-module-resolution");
 const restrictedGlobals = require("confusing-browser-globals");
 
 
