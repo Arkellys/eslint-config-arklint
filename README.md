@@ -8,7 +8,7 @@ My personal ESLint configuration. Most of it is based on [eslint-config-react-ap
 ```shell
 yarn add eslint-config-arklint -D
 ```
-ESLint and all the plugins used in the config are dependencies, so no need to install them. I'm aware that ESLint is supposed to be in the `peerDependencies`, but since I'm maintaining my own package I would rather to have everything in one place for when I update the versions.
+ESLint and all the plugins used in the config are dependencies, so no need to install them. I'm aware that ESLint is supposed to be in the `peerDependencies`, but since I'm maintaining my own package, I'd rather have everything in one place for when I update the versions.
 
 ## Usage
 
