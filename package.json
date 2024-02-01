@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arklint",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "author": "Arkellys",
   "license": "MIT",
   "main": "index.js",
@@ -10,11 +10,11 @@
   },
   "homepage": "https://github.com/Arkellys/eslint-config-arklint#readme",
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.5.1",
+    "@rushstack/eslint-patch": "^1.7.2",
     "confusing-browser-globals": "^1.0.11",
-    "eslint": "^8.53.0",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-jsdoc": "^46.9.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^48.0.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
