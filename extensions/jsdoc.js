@@ -33,19 +33,19 @@ module.exports = {
 				message: "The main description should be written in the third person, begin with a capital letter and end with a period.",
 				match: "/^[A-Z][.^\\w]*s\\b.*\\.$/us"
 			},
-			matchDescription: "[A-Z].*|^\\w+([-]*\\w)*( \\| \\w+([-]*\\w)*)*$",
+			matchDescription: "^[A-Z].*[^\\.]$",
 			tags: {
 				param: {
-					message: "@param description should begin with a capital letter or be a list of options separated by pipes.",
+					message: "@param description should begin with a capital letter and not end with a period.",
 					match: true
 				},
 				property: {
-					message: "@property description should begin with a capital letter or be a list of options separated by pipes.",
+					message: "@property description should begin with a capital letter and not end with a period.",
 					match: true
 				},
 				returns: {
-					message: "@returns description should begin with a capital letter.",
-					match: "[A-Z].*"
+					message: "@returns description should begin with a capital letter and not end with a period.",
+					match: true
 				}
 			}
 		}]
