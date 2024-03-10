@@ -132,6 +132,7 @@ module.exports = {
 		"unicode-bom": ["warn", "never"],
 		"use-isnan": "warn",
 		"valid-typeof": "warn",
+		"require-await": "warn",
 		"getter-return": "warn"
 	}
 };
