@@ -56,6 +56,7 @@ module.exports = {
 			mode: "typescript",
 			preferredTypes: {
 				"object.<>": false,
+				"Object.<>": "Record.<>",
 				"Object": "object",
 				"<>": ".<>",
 				"*": "any"
