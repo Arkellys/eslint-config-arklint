@@ -21,11 +21,18 @@ module.exports = {
 		}],
 		"jsdoc/check-line-alignment": ["warn", "never"],
 		"jsdoc/match-name": ["warn", {
-			match: [{
-				allowName: "/^([A-Z][a-z]+)+$/",
-				message: "The name should be written in PascalCase.",
-				tags: ["callback", "typedef"]
-			}]
+			match: [
+				{
+					allowName: "/^_?([A-Z][a-z]+)+$/",
+					message: "The name should be written in PascalCase.",
+					tags: ["typedef"]
+				},
+				{
+					allowName: "/^([A-Z][a-z]+)+$/",
+					message: "The name should be written in PascalCase.",
+					tags: ["callback"]
+				}
+			]
 		}],
 		"jsdoc/match-description": ["warn", {
 			contexts: ["any"],
