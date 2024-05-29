@@ -65,6 +65,7 @@ module.exports = {
 		"react/no-danger-with-children": "warn",
 		"react/no-direct-mutation-state": "warn",
 		"react/no-is-mounted": "warn",
+		"react/prop-types": "off",
 		"react/require-render-return": "error",
 		"react/style-prop-object": "warn"
 	}
