@@ -16,6 +16,7 @@ module.exports = {
 		"jsdoc/require-hyphen-before-param-description": ["warn", "always", {
 			tags: {
 				property: "always",
+				template: "always",
 				return: "never"
 			}
 		}],
@@ -31,6 +32,11 @@ module.exports = {
 					allowName: "/^([A-Z][a-z]+)+$/",
 					message: "The name should be written in PascalCase.",
 					tags: ["callback"]
+				},
+				{
+					allowName: "/^[A-Z]{1}$/",
+					message: "The name should be a single capital letter.",
+					tags: ["template"]
 				}
 			]
 		}],
@@ -52,6 +58,10 @@ module.exports = {
 				},
 				returns: {
 					message: "@returns description should begin with a capital letter and not end with a period.",
+					match: true
+				},
+				template: {
+					message: "@template description should begin with a capital letter and not end with a period.",
 					match: true
 				}
 			}
