@@ -72,10 +72,10 @@ module.exports = {
 			maxLines: 2,
 			mode: "typescript",
 			preferredTypes: {
-				"object.<>": false,
-				"Object.<>": "Record.<>",
+				"object<>": false,
+				"Object<>": "Record<>",
 				"Object": "object",
-				"<>": ".<>",
+				".<>": "<>",
 				"*": "any"
 			}
 		}
