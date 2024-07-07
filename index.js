@@ -97,10 +97,7 @@ module.exports = {
 			allowTaggedTemplates: true
 		}],
 		"no-unused-labels": "warn",
-		"no-unused-vars": ["warn", {
-			args: "none",
-			ignoreRestSiblings: true
-		}],
+		"no-unused-vars": "warn",
 		"no-use-before-define": ["warn", {
 			functions: false,
 			classes: false,
@@ -110,11 +107,7 @@ module.exports = {
 		"no-useless-computed-key": "warn",
 		"no-useless-concat": "warn",
 		"no-useless-constructor": "warn",
-		"no-useless-rename": ["warn", {
-			ignoreDestructuring: false,
-			ignoreImport: false,
-			ignoreExport: false
-		}],
+		"no-useless-rename": "warn",
 		"no-var": "warn",
 		"no-whitespace-before-property": "warn",
 		"no-with": "warn",
