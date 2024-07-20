@@ -87,7 +87,6 @@ module.exports = {
 		"no-sparse-arrays": "warn",
 		"no-template-curly-in-string": "warn",
 		"no-this-before-super": "warn",
-		"no-throw-literal": "warn",
 		"no-undef": "error",
 		"no-unreachable": "warn",
 		"no-unsafe-negation": "warn",
