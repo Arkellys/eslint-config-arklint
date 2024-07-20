@@ -6,6 +6,8 @@ module.exports = {
 		"plugin:jsdoc/recommended"
 	],
 	rules: {
+		"jsdoc/require-template": "warn",
+		"jsdoc/check-template-names": "warn",
 		"jsdoc/require-returns": "off",
 		"jsdoc/require-jsdoc": "off",
 		"jsdoc/check-param-names": "warn",

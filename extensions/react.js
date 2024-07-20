@@ -19,9 +19,6 @@ module.exports = {
 		"plugin:react/jsx-runtime"
 	],
 	rules: {
-		"react/display-name": "warn",
-		"react/jsx-boolean-value": ["warn", "never"],
-		"react/jsx-closing-bracket-location": "warn",
 		"jsx-a11y/alt-text": "warn",
 		"jsx-a11y/anchor-has-content": "warn",
 		"jsx-a11y/anchor-is-valid": ["warn", {
@@ -41,6 +38,7 @@ module.exports = {
 		"jsx-a11y/role-has-required-aria-props": "warn",
 		"jsx-a11y/role-supports-aria-props": "warn",
 		"jsx-a11y/scope": "warn",
+		"react/display-name": "warn",
 		"react-hooks/exhaustive-deps": "warn",
 		"react-hooks/rules-of-hooks": "error",
 		"react/jsx-curly-brace-presence": "warn",
@@ -61,7 +59,10 @@ module.exports = {
 		}],
 		"react/jsx-uses-react": "warn",
 		"react/jsx-uses-vars": "warn",
+		"react/jsx-boolean-value": ["warn", "never"],
+		"react/jsx-closing-bracket-location": "warn",
 		"react/jsx-wrap-multilines": "warn",
+		"react/jsx-props-no-spread-multi": "warn",
 		"react/no-danger-with-children": "warn",
 		"react/no-direct-mutation-state": "warn",
 		"react/no-is-mounted": "warn",
