@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-arklint",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "author": "Arkellys",
   "license": "MIT",
   "main": "index.js",
