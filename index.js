@@ -162,7 +162,7 @@ module.exports = {
 		}],
 		"@stylistic/js/padding-line-between-statements": [
 			"warn",
-			{ blankLine: "always", prev: ["case", "default"], next: "*" },
+			{ blankLine: "always", prev: "default", next: "*" },
 			{ blankLine: "always", prev: "*", next: "switch" }
 		],
 		"@stylistic/js/quote-props": ["warn", "consistent-as-needed"],
