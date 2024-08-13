@@ -6,12 +6,15 @@ module.exports = {
 		"plugin:jsdoc/recommended"
 	],
 	rules: {
-		"jsdoc/require-template": "warn",
-		"jsdoc/check-template-names": "warn",
-		"jsdoc/require-returns": "off",
-		"jsdoc/require-jsdoc": "off",
 		"jsdoc/check-param-names": "warn",
-		"jsdoc/check-indentation": ["warn", { excludeTags: ["import", "example"] }],
+		"jsdoc/check-template-names": "warn",
+		"jsdoc/lines-before-block": "warn",
+		"jsdoc/require-jsdoc": "off",
+		"jsdoc/require-returns": "off",
+		"jsdoc/require-template": "warn",
+		"jsdoc/check-indentation": ["warn", {
+			excludeTags: ["import", "example"]
+		}],
 		"jsdoc/no-bad-blocks": "warn",
 		"jsdoc/tag-lines": ["warn", "never"],
 		"jsdoc/no-defaults": "off",
