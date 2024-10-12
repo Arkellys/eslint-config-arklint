@@ -3,34 +3,58 @@
   "version": "1.11.0",
   "author": "Arkellys",
   "license": "MIT",
-  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./cjs/index.cjs",
+      "import": "./index.mjs"
+    },
+    "./extensions": {
+      "require": "./cjs/extensions/index.cjs",
+      "import": "./extensions/index.mjs"
+    }
+  },
+  "files": [
+    "cjs",
+    "extensions",
+    "index.mjs"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Arkellys/eslint-config-arklint.git"
   },
   "homepage": "https://github.com/Arkellys/eslint-config-arklint#readme",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build:main": "babel index.mjs --out-dir cjs --out-file-extension .cjs",
+    "build:extensions": "babel extensions --out-dir cjs/extensions --out-file-extension .cjs",
+    "build": "rm -rf cjs && yarn build:main && yarn build:extensions",
+    "prepare": "husky"
   },
   "dependencies": {
-    "@rushstack/eslint-patch": "^1.10.4",
-    "@stylistic/eslint-plugin-js": "^2.8.0",
-    "confusing-browser-globals": "^1.0.11",
-    "eslint-plugin-import": "^2.30.0",
-    "eslint-plugin-jsdoc": "^50.2.3",
+    "@babel/core": "^7.25.8",
+    "@babel/eslint-parser": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "@eslint/js": "^9.12.0",
+    "@stylistic/eslint-plugin-js": "^2.9.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsdoc": "^50.3.1",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0"
+    "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+    "globals": "^15.10.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "@babel/cli": "^7.25.7",
+    "babel-plugin-transform-esm-to-cjs": "^0.0.0",
+    "babel-plugin-transform-import-extension": "^1.0.3",
+    "eslint": "^8.57.1",
+    "husky": "^9.1.6"
   },
   "peerDependencies": {
     "eslint": ">=8.0.0"
-  },
-  "eslintConfig": {
-    "extends": "./index.js"
   },
   "packageManager": "yarn@4.1.0"
 }

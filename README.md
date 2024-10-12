@@ -6,38 +6,38 @@ My personal ESLint configuration.
 ## Installation
 
 ```shell
-yarn add eslint-config-arklint -D
-```
-
-You also need to add [ESLint](https://github.com/eslint/eslint) in your `devDependencies`:
-
-```shell
-yarn add eslint -D
+yarn add eslint eslint-config-arklint -D
 ```
 
 ## Usage
 
-Add the extend in your `.eslintrc.js`:
+> [!WARNING]
+> Only **flat config** is supported, either CJS or ESM.
 
-```javascript
-module.exports = {
-  extends: "arklint",
-  rules: {
-    // Rule overrides
-  }
-}
+### Default config
+
+The default configuration includes standards and stylistic rules for JS.
+
+```js
+import arklintConfig from "eslint-config-arklint";
+
+export default [
+  ...arklintConfig
+];
 ```
 
-The default configuration includes the extensions for `import` and `jsdoc`. The configuration for `react` has to be added manually:
+### Extensions
 
-```javascript
-module.exports = {
-  extends: [
-    "arklint",
-    "arklint/extensions/react"
-  ],
-  rules: {
-    // Rule overrides
-  }
-}
+Optional extensions can be added to add rules for `import`, `react` and `jsdoc`:
+
+```js
+import arklintConfig from "eslint-config-arklint";
+import { importConfig, reactConfig, jsdocConfig } from"eslint-config-arklint/extensions";
+
+export default [
+  ...arklintConfig,
+  ...reactConfig,
+  ...importConfig,
+  ...jsdocConfig
+];
 ```

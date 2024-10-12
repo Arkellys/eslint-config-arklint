@@ -1,4 +1,3 @@
-# Dependencies
 /node_modules
 .pnp.*
 .yarn/*
@@ -7,8 +6,7 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-# Miscellaneous
 yarn-debug.log*
 yarn-error.log*
 .vscode
+/cjs
