@@ -32,7 +32,7 @@ Optional extensions can be added to add rules for `import`, `react` and `jsdoc`:
 
 ```js
 import arklintConfig from "eslint-config-arklint";
-import { importConfig, reactConfig, jsdocConfig } from"eslint-config-arklint/extensions";
+import { importConfig, reactConfig, jsdocConfig } from "eslint-config-arklint/extensions";
 
 export default [
   ...arklintConfig,
