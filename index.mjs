@@ -160,7 +160,9 @@ export default [
 				allowTaggedTemplates: true
 			}],
 			"no-unused-labels": "warn",
-			"no-unused-vars": "warn",
+			"no-unused-vars": ["warn", {
+				caughtErrorsIgnorePattern: "^_"
+			}],
 			"no-use-before-define": ["warn", {
 				functions: false,
 				classes: false,
