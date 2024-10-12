@@ -2,7 +2,7 @@ import jsdocPlugin from "eslint-plugin-jsdoc";
 
 
 export default [
-	jsdocPlugin.configs["flat/recommended"],
+	jsdocPlugin.configs["flat/recommended-typescript-flavor"],
 	{
 		plugins: {
 			jsdoc: jsdocPlugin
