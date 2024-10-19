@@ -14,27 +14,31 @@ yarn add eslint eslint-config-arklint -D
 > [!WARNING]
 > Only **flat config** is supported, either CJS or ESM.
 
-### Default config
+The default configuration includes standards and stylistic rules for JS. Optional extensions can be added to add rules for `import`, `react` and `jsdoc`:
 
-The default configuration includes standards and stylistic rules for JS.
+**ESM**
 
 ```js
 import arklintConfig from "eslint-config-arklint";
+import extensions from "eslint-config-arklint/extensions";
+
+const { importConfig, reactConfig, jsdocConfig } = extensions;
 
 export default [
-  ...arklintConfig
+  ...arklintConfig,
+  ...reactConfig,
+  ...importConfig,
+  ...jsdocConfig
 ];
 ```
 
-### Extensions
-
-Optional extensions can be added to add rules for `import`, `react` and `jsdoc`:
+**CJS**
 
 ```js
-import arklintConfig from "eslint-config-arklint";
-import { importConfig, reactConfig, jsdocConfig } from "eslint-config-arklint/extensions";
+const arklintConfig = require("eslint-config-arklint");
+const { importConfig, reactConfig, jsdocConfig } = require("eslint-config-arklint/extensions");
 
-export default [
+module.exports = [
   ...arklintConfig,
   ...reactConfig,
   ...importConfig,
