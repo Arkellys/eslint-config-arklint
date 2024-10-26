@@ -2768,11 +2768,11 @@ __metadata:
     eslint-plugin-jsx-a11y: "npm:^6.10.0"
     eslint-plugin-react: "npm:^7.37.1"
     eslint-plugin-react-hooks: "npm:^5.0.0"
-    eslint-plugin-sort-imports-es6-autofix: "npm:^0.6.0"
+    eslint-plugin-sort-imports-es6-autofix: "patch:eslint-plugin-sort-imports-es6-autofix@npm%3A0.6.0#~/.yarn/patches/eslint-plugin-sort-imports-es6-autofix-npm-0.6.0-26f56e83fb.patch"
     globals: "npm:^15.11.0"
     husky: "npm:^9.1.6"
   peerDependencies:
-    eslint: ">=8.0.0"
+    eslint: ">=9.0.0"
   languageName: unknown
   linkType: soft
 
@@ -2912,12 +2912,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-sort-imports-es6-autofix@npm:^0.6.0":
+"eslint-plugin-sort-imports-es6-autofix@npm:0.6.0":
   version: 0.6.0
   resolution: "eslint-plugin-sort-imports-es6-autofix@npm:0.6.0"
   peerDependencies:
     eslint: ">=7.7.0"
   checksum: 10c0/3ca15613a1ec7ebd6c2789d3e651b78abad1d0c6adde476f2b8ce4746bc34aad97e515ea7676a42029ab0ce852e9103c26dc1258565dad1c472fe9da9a8373c2
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-sort-imports-es6-autofix@patch:eslint-plugin-sort-imports-es6-autofix@npm%3A0.6.0#~/.yarn/patches/eslint-plugin-sort-imports-es6-autofix-npm-0.6.0-26f56e83fb.patch":
+  version: 0.6.0
+  resolution: "eslint-plugin-sort-imports-es6-autofix@patch:eslint-plugin-sort-imports-es6-autofix@npm%3A0.6.0#~/.yarn/patches/eslint-plugin-sort-imports-es6-autofix-npm-0.6.0-26f56e83fb.patch::version=0.6.0&hash=1b4949"
+  peerDependencies:
+    eslint: ">=7.7.0"
+  checksum: 10c0/96c8090169ee118f45c41e8ab640b4b422af0050d4b288d2208452f2a54b6d399ff243adfe761d15d1f3c404051110c5aab767c56ea5af71b177e8c9ac281a4f
   languageName: node
   linkType: hard
 

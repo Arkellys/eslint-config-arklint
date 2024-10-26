@@ -1,0 +1,13 @@
+diff --git a/rules/sort-imports-es6.js b/rules/sort-imports-es6.js
+index adb8978532677dcb152e8a299f417eb76c9ae655..99657575f577f8e5dedbb4799ed88183b67c77b8 100644
+--- a/rules/sort-imports-es6.js
++++ b/rules/sort-imports-es6.js
+@@ -276,7 +276,7 @@ module.exports = {
+                             message: "Member '{{memberName}}' of the import declaration should be sorted alphabetically.",
+                             data: { memberName: importSpecifiers[firstUnsortedIndex].local.name },
+                             fix(fixer) {
+-                                if (importSpecifiers.some(specifier => sourceCode.getComments(specifier).leading.length || sourceCode.getComments(specifier).trailing.length)) {
++                                if (importSpecifiers.some(specifier => sourceCode.getCommentsBefore(specifier).length || sourceCode.getCommentsAfter(specifier).length)) {
+ 
+                                     // If there are comments in the ImportSpecifier list, don't rearrange the specifiers.
+                                     return null;
