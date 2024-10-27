@@ -1,7 +1,7 @@
 import babelParser from "@babel/eslint-parser";
-import globals from "globals";
 import js from "@eslint/js";
 import stylisticJsPlugin from "@stylistic/eslint-plugin-js";
+import globals from "globals";
 
 
 export default [
