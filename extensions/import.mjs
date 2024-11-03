@@ -23,11 +23,13 @@ export default [
 			"perfectionist/sort-named-imports": "warn",
 			"perfectionist/sort-imports": ["warn", {
 				groups: [
-					["external", "builtin"],
+					"type",
+					"unknown",
+					"builtin",
+					"external",
 					"internal",
 					"parent",
-					["index", "sibling", "style"],
-					"unknown"
+					["index", "sibling", "style"]
 				]
 			}]
 		}
