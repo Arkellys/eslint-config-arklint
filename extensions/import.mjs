@@ -20,6 +20,7 @@ export default [
 			"import/no-webpack-loader-syntax": "error",
 			"import/no-unresolved": ["error", { commonjs: true }],
 			"perfectionist/sort-exports": "warn",
+			"perfectionist/sort-named-exports": "warn",
 			"perfectionist/sort-named-imports": "warn",
 			"perfectionist/sort-imports": ["warn", {
 				groups: [
