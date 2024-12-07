@@ -18,7 +18,10 @@ export default [
 			"import/first": "error",
 			"import/no-amd": "error",
 			"import/no-webpack-loader-syntax": "error",
-			"import/no-unresolved": ["error", { commonjs: true }],
+			"import/no-unresolved": ["error", {
+				ignore: ["router/dom"],
+				commonjs: true
+			}],
 			"perfectionist/sort-exports": "warn",
 			"perfectionist/sort-named-exports": "warn",
 			"perfectionist/sort-named-imports": "warn",

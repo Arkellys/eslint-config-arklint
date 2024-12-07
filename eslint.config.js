@@ -8,6 +8,13 @@ export default [
 	...importConfig,
 	...jsdocConfig,
 	{
+		rules: {
+			"import/no-unresolved": ["error", {
+				ignore: ["eslint-plugin-perfectionist"]
+			}]
+		}
+	},
+	{
 		ignores: ["cjs/"]
 	}
 ];
