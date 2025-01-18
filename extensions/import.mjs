@@ -19,7 +19,6 @@ export default [
 			"import/no-amd": "error",
 			"import/no-webpack-loader-syntax": "error",
 			"import/no-unresolved": ["error", {
-				ignore: ["router/dom"],
 				commonjs: true
 			}],
 			"perfectionist/sort-exports": "warn",
