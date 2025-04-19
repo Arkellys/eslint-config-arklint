@@ -13,7 +13,7 @@ yarn add eslint eslint-config-arklint -D
 
 > [!WARNING]
 > Only **ESM flat config** is supported.  
-> If your project uses CJS, you need to use the `.mjs` extension on your ESLint config file.
+> If your project uses CJS, you need to use the `.mjs` extension for your ESLint config file.
 
 The default configuration includes standards and stylistic rules for JS. Optional extensions can be added to add rules for `import`, `react` and `jsdoc`:
 
