@@ -13,8 +13,5 @@ export default [
 				ignore: ["eslint-plugin-perfectionist"]
 			}]
 		}
-	},
-	{
-		ignores: ["cjs/"]
 	}
 ];

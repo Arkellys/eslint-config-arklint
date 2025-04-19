@@ -6,16 +6,13 @@
   "type": "module",
   "exports": {
     ".": {
-      "require": "./cjs/index.cjs",
       "import": "./index.mjs"
     },
     "./extensions": {
-      "require": "./cjs/extensions/index.cjs",
       "import": "./extensions/index.mjs"
     }
   },
   "files": [
-    "cjs",
     "extensions",
     "index.mjs"
   ],
@@ -26,9 +23,6 @@
   "homepage": "https://github.com/Arkellys/eslint-config-arklint#readme",
   "scripts": {
     "lint": "eslint .",
-    "build:main": "babel index.mjs --out-dir cjs --out-file-extension .cjs",
-    "build:extensions": "babel extensions --out-dir cjs/extensions --out-file-extension .cjs",
-    "build": "rm -rf cjs && yarn build:main && yarn build:extensions",
     "prepare": "husky"
   },
   "dependencies": {
@@ -47,9 +41,6 @@
     "globals": "^16.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.27.0",
-    "babel-plugin-transform-esm-to-cjs": "^0.0.0",
-    "babel-plugin-transform-import-extension": "^1.0.3",
     "eslint": "^9.25.0",
     "husky": "^9.1.7"
   },
