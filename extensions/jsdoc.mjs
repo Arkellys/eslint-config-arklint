@@ -23,7 +23,7 @@ export default [
 		rules: {
 			"jsdoc/check-param-names": "warn",
 			"jsdoc/check-template-names": "warn",
-			"jsdoc/lines-before-block": "warn",
+			"jsdoc/lines-before-block": ["warn", { ignoreSingleLines: true }],
 			"jsdoc/require-jsdoc": "off",
 			"jsdoc/require-returns": "off",
 			"jsdoc/require-template": "warn",
