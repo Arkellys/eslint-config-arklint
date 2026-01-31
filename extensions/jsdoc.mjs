@@ -26,6 +26,7 @@ export default [
 			"jsdoc/lines-before-block": "warn",
 			"jsdoc/require-jsdoc": "off",
 			"jsdoc/require-returns": "off",
+			"jsdoc/reject-any-type": "off",
 			"jsdoc/require-template": "warn",
 			"jsdoc/check-indentation": ["warn", {
 				excludeTags: ["import", "example"]
