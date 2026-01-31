@@ -6,6 +6,7 @@ import reactHooksPlugin from "eslint-plugin-react-hooks";
 export default [
 	reactPlugin.configs.flat.recommended,
 	reactPlugin.configs.flat["jsx-runtime"],
+	reactHooksPlugin.configs.flat["recommended-latest"],
 	{
 		plugins: {
 			"react": reactPlugin,
@@ -48,8 +49,6 @@ export default [
 			"jsx-a11y/role-supports-aria-props": "warn",
 			"jsx-a11y/scope": "warn",
 			"react/display-name": "warn",
-			"react-hooks/exhaustive-deps": "warn",
-			"react-hooks/rules-of-hooks": "error",
 			"react/jsx-curly-brace-presence": "warn",
 			"react/jsx-first-prop-new-line": ["warn", "multiline"],
 			"react/jsx-fragments": ["warn", "element"],
